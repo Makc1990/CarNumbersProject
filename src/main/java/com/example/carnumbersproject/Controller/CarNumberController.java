@@ -20,7 +20,7 @@ public class CarNumberController {
             return numberGenerator.getNext().toString();
         } catch (NoNumbersLeftException e) {
             return e.getMessage();
-            // todo: return response with error code ?
+            // todo: return response with error code
         }
     }
 
@@ -30,7 +30,7 @@ public class CarNumberController {
             return numberGenerator.getRandom().toString();
         } catch (NoNumbersLeftException e) {
             return e.getMessage();
-            // todo: return response with error code ?
+            // todo: return response with error code 
         }
     }
 }

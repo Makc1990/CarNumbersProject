@@ -10,13 +10,15 @@ import static com.example.carnumbersproject.Model.Utils.Constants.MAX_VALUE_CAR_
 @Component
 public class NumberIterator {
 
+    // first of all, we call the getNext() method with an increment,
+    // so we need to make the first initialization the max value,
+    // Then at the first call getNext() will return us 0 (first car number)
     @Getter
     @Setter
-    private Integer currentCarNumber = MAX_VALUE_CAR_NUMBER; // last value, after increment starts from first value
+    private Integer currentCarNumber = MAX_VALUE_CAR_NUMBER;
 
     public Integer getNext() {
         return currentCarNumber + 1;
     }
-
 
 }

@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CarNumberTest {
 
-
     @Test
     public void generateCarNumbers() {
         assertEquals("А000АА 116 RUS", new CarNumber(0).toString());

@@ -4,6 +4,8 @@ import static com.example.carnumbersproject.Model.Utils.Constants.POSSIBLE_CHARA
 
 public class CharacterConverterUtils {
 
+    // extract character from POSSIBLE_CHARACTER_IN_CAR_NUMBERS
+    // for example, 1 -> А, 2 -> В , 11 -> Х
     public static char getChar(int i) {
         if (i < 0 || i > 11) {
             throw new RuntimeException("Is not possible value for character");
@@ -12,6 +14,10 @@ public class CharacterConverterUtils {
         }
     }
 
+
+    // extract three character from int view
+    // for example, 145 -> [В,А,В];
+    // see unit test fullPartCharacterCarNumber
     public static char[] extractCharacters(int partChars) {
         int thirdCharacter = partChars % 12;
         int firstAmdSecondChar = partChars / 12;

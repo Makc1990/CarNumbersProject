@@ -2,6 +2,7 @@ package com.example.carnumbersproject.Model.Utils;
 
 import org.junit.jupiter.api.Test;
 
+import static com.example.carnumbersproject.Model.Utils.Constants.POSSIBLE_CHARACTER_IN_CAR_NUMBERS;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CharacterConverterUtilsTest {
@@ -63,8 +64,6 @@ class CharacterConverterUtilsTest {
         // max value
         assertEquals("ХХХ", getCharPart(1727));
     }
-
-    public static final char[] POSSIBLE_CHARACTER_IN_CAR_NUMBERS = new char[]{'А', 'В', 'Е', 'К', 'М', 'Н', 'О', 'Р', 'С', 'Т', 'У', 'Х'};
 
     @Test
     public void negativeCaseFullCharacterForHighBound() {
